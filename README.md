@@ -1,21 +1,24 @@
 ## Drone dispatcher
 
-### Entorno:
+### Functional requirements:
+The business logic implemented in this microservice corresponds to the content in Drones.docx located in the project root.
+
+### Environment:
 - jdk11
 - postgresql
 
-### *Pasos para crear el contenedor:*
-1. Abrir el *cmd* en la ruta base del proyecto
-2. Escribir y ejecutar `mvn clean package -DskipTests`
-3. Ejecutar `docker-compose up`
+### *Steps to create the container:*
+1. Open *cmd* or terminal in project root
+2. Execute `mvn clean package -DskipTests`
+3. Execute `docker-compose up`
 
 ### Usar API:
-1. Para levantar el proyecto ejecutar el siguiente comando:
+1. To start the project execute:
     ```jshelllanguage
     $ gradle bootRun
-2. Ir a la dirección url: http://localhost:8081/swagger-ui/index.html
-   1. Luego usar el swagger:
-      1. Para crear un dron puede usar el payload siguiente:
+2. Go to address url: http://localhost:8081/swagger-ui/index.html
+   1. Then use swagger:
+      1. To create a dron you can use this payload:
          ```json
          {
          "serialNumber": "05",
@@ -25,7 +28,7 @@
          "state": "IDLE"
          }
          ```
-      2. Para crear un medicamento puede usar el payload siguiente:
+      2. To create a medication you can use this payload:
          ```json
          {
          "name": "Tylenol",
@@ -33,7 +36,7 @@
          "code": "02"
          }
          ```
-      3. Para cargar un dron con medicamentos puede usar el payload siguiente:
+      3. To load a drone with medications you can use this payload:
          ```json
          {
          "droneId": 5,
@@ -42,23 +45,23 @@
          ]
          }
          ```
-      4. Para obtener la lista de medicamentos cargados en un drone puede usar el path param siguiente
+      4. To get the list of loaded medications in a drone you can use this path param:
          ```jsonpath 
          5
          ```
-      5. Para obtener el nivel de bateria de un drone puede usar el path param siguiente
+      5. To get a drone battery level you can use this path param:
          ```jsonpath 
          5
          ```
-      6. Para obtener la lista de drones disponibles para cargar solo tiene que realizar la peticion
+      6. To get the list of available drones just execute the request
    
 
-3. Puede importar desde el *Postman* o *Insomnia* la API desde la dirección:
+3. You can import this API from *Postman* or *Insomnia* from address:
    - http://localhost:8081/v2/api-docs, 
-   Ademas, la collection de postman esta ubicada en /src/main/resources/static/drone-dispatcher-collection.postman_collection.json
+   Also the postman collection is located in: /src/main/resources/static/drone-dispatcher-collection.postman_collection.json
 
-### Para cerrar el contenedor:
-- Abrir el cmd en la carpeta *src/main/docker* y ejecutar `docker-compose down`
+### To close the container:
+- Open cmd o terminal in project root and execute `docker-compose down`
 
 
 
