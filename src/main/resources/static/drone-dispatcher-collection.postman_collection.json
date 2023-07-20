@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "1dde9785-ee9d-4ebd-a8c6-c405e608dc8b",
+		"name": "drone-dispatcher-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create medication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Advil\",\n    \"weight\": 30,\n    \"code\": \"DF_02\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/drone-dispatcher/api/v1/medication/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"drone-dispatcher",
+						"api",
+						"v1",
+						"medication",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create drone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"serialNumber\": \"11\",\n    \"batteryCapacity\": 95,\n    \"weight\": 500,\n    \"model\": \"Lightweight\",\n    \"state\": \"IDLE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/drone-dispatcher/api/v1/drone/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"drone-dispatcher",
+						"api",
+						"v1",
+						"drone",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "load drone",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"droneId\": 4,\n    \"medications\" : [\n        4\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/drone-dispatcher/api/v1/drone/load",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"drone-dispatcher",
+						"api",
+						"v1",
+						"drone",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "drone-loaded-medications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/drone-dispatcher/api/v1/drone/loaded-medications/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"drone-dispatcher",
+						"api",
+						"v1",
+						"drone",
+						"loaded-medications",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "drone-battery-level",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/drone-dispatcher/api/v1/drone/battery-level/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"drone-dispatcher",
+						"api",
+						"v1",
+						"drone",
+						"battery-level",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "drones-available-for-loading",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/drone-dispatcher/api/v1/drone/available-for-loading",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"drone-dispatcher",
+						"api",
+						"v1",
+						"drone",
+						"available-for-loading"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

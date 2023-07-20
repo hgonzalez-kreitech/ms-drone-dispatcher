@@ -1,0 +1,48 @@
+2023-07-19 00:05:36.668  INFO 85598 --- [main] c.a.d.MsDroneDispatcherApplication       : Starting MsDroneDispatcherApplication using Java 11.0.15 on F1D00461J134.local with PID 85598 (/Users/harvet/Documents/ACL/workspace/ms-drone-dispatcher/build/classes/java/main started by harvet in /Users/harvet/Documents/ACL/workspace/ms-drone-dispatcher)
+2023-07-19 00:05:36.672  INFO 85598 --- [main] c.a.d.MsDroneDispatcherApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-07-19 00:05:45.667  INFO 85620 --- [main] c.a.d.MsDroneDispatcherApplication       : Starting MsDroneDispatcherApplication using Java 11.0.15 on F1D00461J134.local with PID 85620 (/Users/harvet/Documents/ACL/workspace/ms-drone-dispatcher/build/classes/java/main started by harvet in /Users/harvet/Documents/ACL/workspace/ms-drone-dispatcher)
+2023-07-19 00:05:45.668  INFO 85620 --- [main] c.a.d.MsDroneDispatcherApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-07-19 00:05:46.168  INFO 85620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-07-19 00:05:46.175  INFO 85620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2023-07-19 00:05:46.435  INFO 85620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-07-19 00:05:46.439  INFO 85620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-19 00:05:46.439  INFO 85620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-07-19 00:05:46.507  INFO 85620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-19 00:05:46.508  INFO 85620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 815 ms
+2023-07-19 00:05:46.870  INFO 85620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-19 00:05:47.021  INFO 85620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-19 00:05:47.120  INFO 85620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-07-19 00:05:47.286  INFO 85620 --- [main] c.a.d.MsDroneDispatcherApplication       : Started MsDroneDispatcherApplication in 1.807 seconds (JVM running for 2.343)
+2023-07-19 00:05:47.286  INFO 85620 --- [task-1] c.a.d.service.impl.DroneServiceImpl      : Drone capacity check at 2023/07/19 00:05
+2023-07-19 00:05:47.290  INFO 85620 --- [task-1] c.a.d.r.impl.DroneRepositoryImpl         : DroneRepositoryImpl.getAllDrones
+2023-07-19 00:05:47.301  INFO 85620 --- [task-1] c.a.d.service.impl.DroneServiceImpl      : drone id - 7, serial number - 09, capacity - 95
+2023-07-19 00:05:47.301  INFO 85620 --- [task-1] c.a.d.service.impl.DroneServiceImpl      : drone id - 8, serial number - 10, capacity - 95
+2023-07-19 00:05:47.301  INFO 85620 --- [task-1] c.a.d.service.impl.DroneServiceImpl      : drone id - 9, serial number - 11, capacity - 95
+2023-07-19 00:05:47.301  INFO 85620 --- [task-1] c.a.d.service.impl.DroneServiceImpl      : drone id - 4, serial number - 06, capacity - 95
+2023-07-19 00:05:47.301  INFO 85620 --- [task-1] c.a.d.service.impl.DroneServiceImpl      : drone id - 10, serial number - 12, capacity - 87
+2023-07-19 00:06:15.919  INFO 85620 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-19 00:06:15.920  INFO 85620 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-19 00:06:15.926  INFO 85620 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-07-19 00:06:47.288  INFO 85620 --- [task-2] c.a.d.service.impl.DroneServiceImpl      : Drone capacity check at 2023/07/19 00:06
+2023-07-19 00:06:47.291  INFO 85620 --- [task-2] c.a.d.r.impl.DroneRepositoryImpl         : DroneRepositoryImpl.getAllDrones
+2023-07-19 00:06:47.328  INFO 85620 --- [task-2] c.a.d.service.impl.DroneServiceImpl      : drone id - 7, serial number - 09, capacity - 95
+2023-07-19 00:06:47.328  INFO 85620 --- [task-2] c.a.d.service.impl.DroneServiceImpl      : drone id - 8, serial number - 10, capacity - 95
+2023-07-19 00:06:47.328  INFO 85620 --- [task-2] c.a.d.service.impl.DroneServiceImpl      : drone id - 9, serial number - 11, capacity - 95
+2023-07-19 00:06:47.328  INFO 85620 --- [task-2] c.a.d.service.impl.DroneServiceImpl      : drone id - 4, serial number - 06, capacity - 95
+2023-07-19 00:06:47.328  INFO 85620 --- [task-2] c.a.d.service.impl.DroneServiceImpl      : drone id - 10, serial number - 12, capacity - 87
+2023-07-19 00:07:47.284  INFO 85620 --- [task-3] c.a.d.service.impl.DroneServiceImpl      : Drone capacity check at 2023/07/19 00:07
+2023-07-19 00:07:47.288  INFO 85620 --- [task-3] c.a.d.r.impl.DroneRepositoryImpl         : DroneRepositoryImpl.getAllDrones
+2023-07-19 00:07:47.302  INFO 85620 --- [task-3] c.a.d.service.impl.DroneServiceImpl      : drone id - 7, serial number - 09, capacity - 95
+2023-07-19 00:07:47.302  INFO 85620 --- [task-3] c.a.d.service.impl.DroneServiceImpl      : drone id - 8, serial number - 10, capacity - 95
+2023-07-19 00:07:47.303  INFO 85620 --- [task-3] c.a.d.service.impl.DroneServiceImpl      : drone id - 9, serial number - 11, capacity - 95
+2023-07-19 00:07:47.303  INFO 85620 --- [task-3] c.a.d.service.impl.DroneServiceImpl      : drone id - 4, serial number - 06, capacity - 95
+2023-07-19 00:07:47.303  INFO 85620 --- [task-3] c.a.d.service.impl.DroneServiceImpl      : drone id - 10, serial number - 12, capacity - 87
+2023-07-19 00:08:47.281  INFO 85620 --- [task-4] c.a.d.service.impl.DroneServiceImpl      : Drone capacity check at 2023/07/19 00:08
+2023-07-19 00:08:47.284  INFO 85620 --- [task-4] c.a.d.r.impl.DroneRepositoryImpl         : DroneRepositoryImpl.getAllDrones
+2023-07-19 00:08:47.305  INFO 85620 --- [task-4] c.a.d.service.impl.DroneServiceImpl      : drone id - 7, serial number - 09, capacity - 95
+2023-07-19 00:08:47.306  INFO 85620 --- [task-4] c.a.d.service.impl.DroneServiceImpl      : drone id - 8, serial number - 10, capacity - 95
+2023-07-19 00:08:47.306  INFO 85620 --- [task-4] c.a.d.service.impl.DroneServiceImpl      : drone id - 9, serial number - 11, capacity - 95
+2023-07-19 00:08:47.306  INFO 85620 --- [task-4] c.a.d.service.impl.DroneServiceImpl      : drone id - 4, serial number - 06, capacity - 95
+2023-07-19 00:08:47.307  INFO 85620 --- [task-4] c.a.d.service.impl.DroneServiceImpl      : drone id - 10, serial number - 12, capacity - 87
+2023-07-19 00:09:00.075  INFO 85620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-19 00:09:00.079  INFO 85620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

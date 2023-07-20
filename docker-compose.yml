@@ -1,0 +1,40 @@
+version: '3.1'
+
+name: drone-dispatcher-system
+services:
+  drone_dispatcher:
+    image: 'drone-dispatcher:latest'
+    restart: on-failure
+    build:
+      context: .
+    container_name: drone-dispatcher
+    depends_on:
+      - postgres_db_drones
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres_db_drones:5432/drones
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=qwerty
+  postgres_db_drones:
+    container_name: postgres_db_drones
+    image: postgres:latest
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qwerty
+      POSTGRES_DB: drones
+  adminer_drones:
+    container_name: adminer_postgres_drones
+    image: adminer
+    restart: always
+    depends_on:
+      - postgres_db_drones
+    ports:
+      - 9090:8080
+
+
+      
+    

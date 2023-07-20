@@ -1,0 +1,33 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: ms-drone-dispatcher
+  datasource:
+    url: jdbc:postgresql://localhost:5432/drones
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: qwerty
+  liquibase:
+    enabled: false
+    change-log: classpath:/db/changelog/db.changelog-master.yml
+    clear-checksums: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+swagger:
+  title: Drones Dispatcher Api
+  description: Api that process drones and medications info, and executes related business logic
+  version: 1.0
+  term-of-service: For personal use
+  contact-name: Harvet Gonzalez Rojas
+  license-url: http://localhost:8081/swagger-ui/index.html/#
+
+scheduler:
+  interval: 60000
+
+logging:
+  file:
+    name: logs/drone_capacity.log
